@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_5"
+    android:minHeight="@dimen/dp_40"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_divider_0_8"></include>
+    <!--健康宣教数据历史记录-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_item_healthEduHistory_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="2019-09-27 09:48"
+            android:textColor="@color/bg_royalBlue"
+            android:textSize="@dimen/text_content_level_2" />
+
+        <TextView
+            android:id="@+id/tv_item_healthEduHistory_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="唐文僧"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_content_level_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_healthEduHistory_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_gray_level3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/field_item" />
+
+        <TextView
+            android:id="@+id/tv_item_healthEduHistory_item"
+            style="@style/text_lightBlack_level3"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="宣教项目1；宣教项目2；宣教项目三；宣教项目4；宣教项目5；宣教项目1；宣教项目2；宣教项目三；宣教项目4；宣教项目5" />
+    </LinearLayout>
+</LinearLayout>

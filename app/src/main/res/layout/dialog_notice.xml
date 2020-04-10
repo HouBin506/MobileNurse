@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_lightGrayR"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_dialog_title"></include>
+
+    <TextView
+        android:id="@+id/tv_noticeDialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_horizontal_margin_parent"
+        android:layout_marginTop="@dimen/view_vertical_margin_brother"
+        android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+        android:layout_marginBottom="@dimen/view_vertical_margin_brother"
+        android:gravity="center"
+        android:maxLines="6"
+        android:text="我是NoticeDialog的内容，aidifj90q[poksadf啊【】士大夫奥斯卡接电话放奥斯卡的交付"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_content_level_4" />
+
+    <include layout="@layout/include_dialog_bottom"></include>
+</LinearLayout>

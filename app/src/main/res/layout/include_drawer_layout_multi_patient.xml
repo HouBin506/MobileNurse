@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_170"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_main_drawer_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/view_vertical_margin_parent"
+            android:src="@mipmap/img_logo_nurse" />
+
+        <TextView
+            android:id="@+id/tv_main_drawer_userName"
+            style="@style/text_lightBlack_level3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/view_horizontal_margin_brother"
+            android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+            android:layout_toRightOf="@id/img_main_drawer_header"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="10" />
+
+        <TextView
+            android:id="@+id/tv_main_drawer_deptName"
+            style="@style/text_lightBlack_level3"
+            android:layout_below="@id/tv_main_drawer_userName"
+            android:layout_marginLeft="@dimen/view_horizontal_margin_brother"
+            android:layout_marginTop="@dimen/view_vertical_margin_brother"
+            android:layout_toRightOf="@id/img_main_drawer_header"
+            android:drawableRight="@mipmap/ic_arrow_right_gray"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_lightGrayB"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/sv_main_drawer_menu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_main_drawer_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_lightGrayR"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10">
+
+
+                <TextView
+                    android:id="@+id/tv_systemSetting_lock"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="@string/btn_lock"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_content_level_2" />
+
+                <TextView
+                    android:id="@+id/tv_systemSetting_switchUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="@string/btn_switchAccount"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_content_level_2" />
+
+                <TextView
+                    android:id="@+id/tv_systemSetting_changPassWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="@string/btn_changePassword"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_content_level_2"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_systemSetting_bedRange"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="@string/btn_bed_range"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_content_level_2"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_systemSetting_webServiceIp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_systemSetting_webServiceIPSet"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:text="@string/btn_serviceAddress"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/text_content_level_2" />
+
+                    <TextView
+                        android:id="@+id/tv_systemSetting_webServiceIP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_systemSetting_webServiceIPSet"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:textColor="@color/gray"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_systemSetting_scanSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/cb_systemSetting_scanSetting"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:button="@drawable/selector_checkbox_login"
+                        android:checked="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/btn_cameraScan"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/text_content_level_2" />
+
+                    <TextView
+                        android:id="@+id/tv_scanSetting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cb_systemSetting_scanSetting"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:text="@string/message_cameraScan_desc"
+                        android:textColor="@color/gray"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

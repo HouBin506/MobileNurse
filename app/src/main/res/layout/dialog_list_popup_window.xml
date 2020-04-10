@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_dialog_title"></include>
+
+    <TextView
+        android:id="@+id/tv_listPopupWindowDialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_horizontal_margin_parent"
+        android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="我是输入框的说明message   骄傲骄傲家kkk啦啦啦啦l;流量卡就打发斯蒂芬看得见佛品牌【【onlzijfdmlpooiojjjyqh"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_content_level_4" />
+
+    <TextView
+        android:id="@+id/tv_listPopupWindowDialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/ic_bg_drop_down_textview"
+        android:gravity="center"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/text_content_level_2"></TextView>
+
+    <include layout="@layout/include_dialog_bottom"></include>
+</LinearLayout>

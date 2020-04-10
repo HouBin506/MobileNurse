@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_lightGrayB"
+    tools:context=".mvp.login.LoginActivity">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/view_horizontal_margin_parent"
+            android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+            android:orientation="vertical">
+            <!-- 标题 -->
+            <ImageView
+                android:id="@+id/img_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/img_app_logo"></ImageView>
+
+            <LinearLayout
+                android:id="@+id/ll_login_userId"
+                style="@style/editText_common"
+                android:layout_marginTop="@dimen/view_vertical_margin_brother"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_login_userId"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:hintEnabled="false">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/et_login_userId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:completionThreshold="2"
+                        android:hint="@string/message_inputUserId"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_content_level_3" />
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/img_login_selectAccount"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp_5"
+                    android:scaleType="center"
+                    android:src="@mipmap/ic_arrows_down_popup" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/et_login_password"
+                    style="@style/editText_common"
+                    android:hint="@string/message_inputPassword"
+                    android:imeActionId="6"
+                    android:imeActionLabel="@string/btn_login"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_content_level_3" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_login_passwordNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/et_login_passwordNew"
+                    style="@style/editText_common"
+                    android:hint="@string/message_inputNewPassword"
+                    android:imeActionId="7"
+                    android:imeActionLabel="@string/btn_login"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_content_level_3" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_login_selectDeptLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/common_application"></TextView>
+
+                <LinearLayout
+                    android:id="@+id/ll_login_selectDept"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sp_38"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_3"
+                    android:background="@drawable/shape_bg_edittext_black"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_login_selectDept"
+                        style="@style/text_lightBlack_level3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="2"></TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp_2"
+                        android:src="@mipmap/ic_arrows_down_popup"></ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_login_remember_and_clear"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/view_vertical_margin_brother">
+
+                <CheckBox
+                    android:id="@+id/cb_login_rememberPassword"
+                    style="@style/text_gray_level3"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_checkbox_login"
+                    android:text="@string/btn_rememberPassword" />
+
+                <TextView
+                    android:id="@+id/tv_login_clear"
+                    style="@style/text_blue_level3"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="@string/btn_clear"
+                    android:textColor="@color/text_blue"
+                    android:textSize="@dimen/text_content_level_3" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_login_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/view_vertical_margin_brother"
+                android:background="@drawable/shape_bg_btn_blue"
+                android:text="@string/btn_login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_content_level_3" />
+
+            <com.herenit.mobilenurse.custom.widget.progressbar.LoadingProgressBar
+                android:id="@+id/pb_login_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/view_vertical_margin_brother"></com.herenit.mobilenurse.custom.widget.progressbar.LoadingProgressBar>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_login_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/view_horizontal_margin_screen"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_login_systemSettings"
+            style="@style/text_blue_level3"
+            android:text="@string/btn_systemSettings" />
+
+        <TextView
+            android:id="@+id/tv_app_copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_vertical_margin_brother"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/app_copyright"
+            android:textSize="@dimen/text_content_level_6" />
+    </LinearLayout>
+</RelativeLayout>

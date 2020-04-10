@@ -1,0 +1,2626 @@
+[
+  {
+    "id": "入院诊断",
+    "viewName": "TextView",
+    "dataType": "字符",
+    "text": "入院诊断：",
+    "dataValue": "",
+    "textSize": "Normal",
+    "modelType": "Item",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "入院诊断_1",
+        "viewName": "EditText",
+        "dataType": "字符",
+        "text": "",
+        "readOnly": true,
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": ""
+      }
+    ]
+  },
+  {
+    "id": "入院时间",
+    "viewName": "TextView",
+    "dataType": "日期",
+    "text": "入院时间：",
+    "dataValue": "",
+    "textSize": "Normal",
+    "modelType": "Item",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "入院时间_1",
+        "viewName": "AssessCalendar",
+        "dataType": "日期",
+        "text": "",
+        "dataValue": "",
+        "readOnly": true,
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": ""
+      }
+    ]
+  },
+  {
+    "id": "入院方式1",
+    "viewName": "TextView",
+    "dataType": "字符",
+    "text": "入院方式",
+    "dataValue": "",
+    "textSize": "Normal",
+    "modelType": "Item",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "入院方式1_急诊",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "急诊",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      },
+      {
+        "id": "入院方式1_平诊",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "平诊",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      },
+      {
+        "id": "入院方式1_门诊",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "门诊",
+        "dataValue": "",
+        "modelType": "Value",
+        "textSize": "Normal",
+        "unit": "",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "id": "入院方式2",
+    "viewName": "TextView",
+    "dataType": "字符",
+    "text": "入院方式",
+    "dataValue": "",
+    "textSize": "Normal",
+    "modelType": "Item",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "入院方式2_步行",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "步行",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      },
+      {
+        "id": "入院方式2_轮椅",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "轮椅",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      },
+      {
+        "id": "入院方式2_平车",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "平车",
+        "dataValue": "",
+        "modelType": "Value",
+        "textSize": "Normal",
+        "unit": "",
+        "checked": false
+      },
+      {
+        "id": "入院方式2_扶持",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "扶持",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      },
+      {
+        "id": "入院方式2_抱入",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "抱入",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "id": "一般资料",
+    "viewName": "TextView",
+    "dataType": null,
+    "text": "一般资料",
+    "dataValue": "",
+    "textSize": "Large",
+    "modelType": "Group",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "民族",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "民族：",
+        "dataValue": "",
+        "modelType": "Item",
+        "textSize": "Normal",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "民族_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "职业",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "职业：",
+        "dataValue": "",
+        "modelType": "Item",
+        "textSize": "Normal",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "职业_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "婚姻状况",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "婚姻状况：",
+        "dataValue": "",
+        "modelType": "Item",
+        "textSize": "Normal",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "婚姻状况_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "文化程度",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "文化程度：",
+        "dataValue": "",
+        "modelType": "Item",
+        "textSize": "Normal",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "文化程度_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "联系人",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "联系人：",
+        "dataValue": "",
+        "modelType": "Item",
+        "textSize": "Normal",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "联系人_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "电话",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "电话：",
+        "dataValue": "",
+        "modelType": "Item",
+        "textSize": "Normal",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "电话_1",
+            "viewName": "EditText",
+            "dataType": "数值",
+            "text": "",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "信息来源",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "信息来源：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "信息来源_患者",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "患者",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "信息来源_家属",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "家属",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "信息来源_其他",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "其他",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "信息来源_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "医疗费用支付方式",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "医疗费用支付方式：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "医疗费用支付方式_州职工",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "州职工",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "医疗费用支付方式_市职工",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "市职工",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "医疗费用支付方式_城乡居民",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "城乡居民",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "医疗费用支付方式_自费",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "自费",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "医疗费用支付方式_其他",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "其他",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "医疗费用支付方式_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "吸烟史",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "吸烟史：",
+        "modelType": "Item",
+        "dataValue": "",
+        "textSize": "Normal",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "吸烟史_无",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "无",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "吸烟史_有",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "有",
+            "modelType": "Value",
+            "dataValue": "",
+            "textSize": "Normal",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "吸烟史_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": "年"
+          },
+          {
+            "id": "吸烟史_2",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": "支/天"
+          }
+        ]
+      },
+      {
+        "id": "饮酒史",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "饮酒史：",
+        "dataValue": "",
+        "modelType": "Item",
+        "textSize": "Normal",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "饮酒史_无",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "无",
+            "modelType": "Value",
+            "dataValue": "",
+            "textSize": "Normal",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "饮酒史_有",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "有",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "饮酒史_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "年"
+          },
+          {
+            "id": "饮酒史_2",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "两/天"
+          }
+        ]
+      },
+      {
+        "id": "手术史",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "手术史：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "手术史_无",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "无",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "手术史_有",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "有",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "手术史_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "过敏史",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "过敏史：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "过敏史_无",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "无",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "过敏史_有",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "有",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": "",
+            "checked": false,
+            "subModel": [
+              {
+                "id": "过敏史_有_药物_1",
+                "viewName": "AssessTextInputView",
+                "dataType": "字符",
+                "text": "药物",
+                "dataValue": "",
+                "modelType": "SubValue",
+                "textSize": "Normal",
+                "unit": ""
+              },
+              {
+                "id": "过敏史_有_食物_1",
+                "viewName": "AssessTextInputView",
+                "dataType": "字符",
+                "text": "食物",
+                "dataValue": "",
+                "textSize": "Normal",
+                "modelType": "SubValue",
+                "unit": ""
+              },
+              {
+                "id": "过敏史_有_其他_1",
+                "viewName": "AssessTextInputView",
+                "dataType": "字符",
+                "text": "其他",
+                "dataValue": "",
+                "textSize": "Normal",
+                "modelType": "SubValue",
+                "unit": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "家族史",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "家族史：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "家族史_无",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "无",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "家族史_有",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "有",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false,
+            "subModel": [
+              {
+                "id": "家族史_有_高血压",
+                "viewName": "CheckBox",
+                "dataType": "字符",
+                "text": "高血压",
+                "modelType": "SubValue",
+                "dataValue": "",
+                "textSize": "Normal",
+                "unit": "",
+                "checked": false
+              },
+              {
+                "id": "家族史_有_糖尿病",
+                "viewName": "CheckBox",
+                "dataType": "字符",
+                "text": "糖尿病",
+                "dataValue": "",
+                "modelType": "SubValue",
+                "textSize": "Normal",
+                "unit": "",
+                "checked": false
+              },
+              {
+                "id": "家族史_有_冠心病",
+                "viewName": "CheckBox",
+                "dataType": "字符",
+                "text": "冠心病",
+                "modelType": "SubValue",
+                "dataValue": "",
+                "textSize": "Normal",
+                "unit": "",
+                "checked": false
+              },
+              {
+                "id": "家族史_有_脑血管病",
+                "viewName": "CheckBox",
+                "dataType": "字符",
+                "text": "脑血管病",
+                "dataValue": "",
+                "textSize": "Normal",
+                "modelType": "SubValue",
+                "unit": "",
+                "checked": false
+              },
+              {
+                "id": "家族史_有_其他",
+                "viewName": "CheckBox",
+                "dataType": "字符",
+                "text": "其他",
+                "dataValue": "",
+                "textSize": "Normal",
+                "modelType": "SubValue",
+                "unit": "",
+                "checked": false
+              },
+              {
+                "id": "家族史_有_1",
+                "viewName": "EditText",
+                "dataType": "字符",
+                "text": "",
+                "dataValue": "",
+                "modelType": "SubValue",
+                "textSize": "Normal",
+                "unit": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "既往史",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "既往史：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "既往史_无",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "无",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "既往史_有",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "有",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "既往史_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "现病史（主诉）",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "现病史（主诉）：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "现病史（主诉）_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "现病史（主诉）：",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "身体评估",
+    "viewName": "TextView",
+    "dataType": "字符",
+    "text": "身体评估",
+    "dataValue": "",
+    "modelType": "Group",
+    "textSize": "Large",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "体温（T）",
+        "viewName": "TextView",
+        "dataType": "数值",
+        "text": "体温（T）：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "体温（T）_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "体温（T）",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "℃"
+          }
+        ]
+      },
+      {
+        "id": "脉搏（P）",
+        "viewName": "TextView",
+        "dataType": "数值",
+        "text": "脉搏（P）：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "脉搏（P）_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "脉搏（P）",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "次/分"
+          }
+        ]
+      },
+      {
+        "id": "呼吸（R）",
+        "viewName": "TextView",
+        "dataType": "数值",
+        "text": "呼吸（R）：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "呼吸（R）_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "呼吸（R）：",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "次/分"
+          }
+        ]
+      },
+      {
+        "id": "血压（Bp）",
+        "viewName": "TextView",
+        "dataType": "数值",
+        "text": "血压（Bp）：",
+        "dataValue": "",
+        "modelType": "Item",
+        "textSize": "Normal",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "血压（Bp）_1",
+            "viewName": "AssessDoubleInputView",
+            "dataType": "数值",
+            "text": "血压（Bp）",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": " / mmHg"
+          }
+        ]
+      },
+      {
+        "id": "身高（H）",
+        "viewName": "TextView",
+        "dataType": "数值",
+        "text": "身高（H）：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "身高（H）_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "身高（H）",
+            "dataValue": "",
+            "formula": "体重指数BMI_1=体重（w）_1/((身高（H）_1/100)*(身高（H）_1/100))",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "cm"
+          }
+        ]
+      },
+      {
+        "id": "体重（w）",
+        "viewName": "TextView",
+        "dataType": "数值",
+        "text": "体重（w）：",
+        "dataValue": "",
+        "modelType": "Item",
+        "textSize": "Normal",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "体重（w）_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "体重（w）",
+            "dataValue": "",
+            "formula": "体重指数BMI_1=体重（w）_1/((身高（H）_1/100)*(身高（H）_1/100))",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "kg"
+          }
+        ]
+      },
+      {
+        "id": "体重指数BMI",
+        "viewName": "TextView",
+        "dataType": "数值",
+        "text": "体重指数BMI：",
+        "dataValue": "",
+        "modelType": "Item",
+        "textSize": "Normal",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "体重指数BMI_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "体重指数BMI",
+            "dataValue": "",
+            "formula": "体重指数BMI_1=体重（w）_1/((身高（H）_1/100)*(身高（H）_1/100))",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "readOnly": true,
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "全身营养状况",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "全身营养状况：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "全身营养状况_良好",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "良好",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "全身营养状况_稍瘦",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "稍瘦",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "全身营养状况_肥胖",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "肥胖",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "全身营养状况_其他",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "其他",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "全身营养状况_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "意识",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "意识：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "意识_清楚",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "清楚",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "意识_嗜睡",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "嗜睡",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "意识_意识模糊",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "意识模糊",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "意识_昏睡",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "昏睡",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "意识_昏迷",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "昏迷",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "意识_其他",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "其他",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "意识_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "语言",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "语言：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "语言_清楚",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "清楚",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "语言_模糊",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "模糊",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "语言_失语",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "失语",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "语言_其他",
+            "viewName": "CheckBox",
+            "dataType": "字符",
+            "text": "其他",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "语言_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "眼",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "眼：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "眼_正常",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "正常",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "眼_左眼视力下降",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "左眼视力下降",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "眼_右眼视力下降",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "右眼视力下降",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "眼_左眼视物不清",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "左眼视物不清",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "眼_右眼视物不清",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "右眼视物不清",
+            "modelType": "Value",
+            "dataValue": "",
+            "textSize": "Normal",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "眼_左眼老花",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "左眼老花",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "眼_右眼老花",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "右眼老花",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "眼_左眼失明",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "左眼失明",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "眼_右眼失明",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "右眼失明",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "眼_其他",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "其他",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "眼_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "modelType": "Value",
+            "textSize": "Normal",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "耳",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "耳：",
+        "dataValue": "",
+        "modelType": "Item",
+        "textSize": "Normal",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "耳_正常",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "正常",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "耳_耳鸣",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "耳鸣",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "耳_重听",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "重听",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "耳_左耳听力下降",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "左耳听力下降",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "耳_右耳听力下降",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "右耳听力下降",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "耳_左耳失聪",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "左耳失聪",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "耳_右耳失聪",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "右耳失聪",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "耳_其他",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "其他",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "耳_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "鼻",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "鼻：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "鼻_正常",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "正常",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "鼻_鼻塞",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "鼻塞",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "鼻_鼻窦问题",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "鼻窦问题",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "鼻_鼻翼煽动",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "鼻翼煽动",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "鼻_鼻出血",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "鼻出血",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "鼻_其他",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "其他",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "鼻_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "口腔",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "口腔：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "口腔_正常",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "正常",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "口腔_干燥",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "干燥",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "口腔_溃疡",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "溃疡",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "口腔_牙龈出血",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "牙龈出血",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "口腔_其他",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "其他",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "口腔_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "四肢骨骼系统",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "四肢骨骼系统：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "四肢骨骼系统_正常",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "正常",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "四肢骨骼系统_麻痹",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "麻痹",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "四肢骨骼系统_畸形",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "畸形",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "四肢骨骼系统_骨折",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "骨折",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "四肢骨骼系统_萎缩",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "萎缩",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "四肢骨骼系统_瘫痪",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "瘫痪",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "四肢活动范围",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "四肢活动范围：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "四肢活动范围_正常",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "正常",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "四肢活动范围_左上肢受限",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "左上肢受限",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "四肢活动范围_右上肢受限",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "右上肢受限",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "四肢活动范围_左下肢受限",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "左下肢受限",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "四肢活动范围_右下肢受限",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "右下肢受限",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "排便情况",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "排便情况：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "排便情况_正常",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "正常",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排便情况_习惯性便秘",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "习惯性便秘",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排便情况_腹泻",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "腹泻",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": "",
+            "subModel": [
+              {
+                "id": "排便情况_腹泻_1",
+                "viewName": "AssessTextInputView",
+                "dataType": "数值",
+                "text": "",
+                "dataValue": "",
+                "textSize": "Normal",
+                "modelType": "SubValue",
+                "checked": false,
+                "unit": "次/日"
+              }
+            ]
+          },
+          {
+            "id": "排便情况_失禁",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "失禁",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排便情况_便血",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "便血",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排便情况_人工肛门",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "人工肛门",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排便情况_其他",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "其他",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排便情况_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "排尿情况",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "排尿情况：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "排尿情况_正常",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "正常",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排尿情况_尿频",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "尿频",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排尿情况_尿急",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "尿急",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排尿情况_尿痛",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "尿痛",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排尿情况_无尿",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "无尿",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排尿情况_少尿",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "少尿",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排尿情况_多尿",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "多尿",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排尿情况_尿失禁",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "尿失禁",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排尿情况_尿潴留",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "尿潴留",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排尿情况_排尿困难",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "排尿困难",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排尿情况_血尿",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "血尿",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排尿情况_留置尿管",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "留置尿管",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": "",
+            "subModel": [
+              {
+                "id": "排尿情况_留置尿管_留置日期_1",
+                "viewName": "AssessTextInputView",
+                "dataType": "字符",
+                "text": "留置日期",
+                "dataValue": "",
+                "textSize": "Normal",
+                "modelType": "SubValue",
+                "checked": false,
+                "unit": ""
+              }
+            ]
+          },
+          {
+            "id": "排尿情况_造萎",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "造萎",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": "",
+            "subModel": [
+              {
+                "id": "排尿情况_造萎_部位_1",
+                "viewName": "AssessTextInputView",
+                "dataType": "字符",
+                "text": "部位",
+                "dataValue": "",
+                "textSize": "Normal",
+                "modelType": "SubValue",
+                "checked": false,
+                "unit": ""
+              }
+            ]
+          },
+          {
+            "id": "排尿情况_其他",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "其他",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "排尿情况_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "皮肤情况",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "皮肤情况：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "皮肤情况_正常",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "正常",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "皮肤情况_苍白",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "苍白",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "皮肤情况_黄染",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "黄染",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "皮肤情况_紫绀",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "紫绀",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "皮肤情况_皮疹",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "皮疹",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": "",
+            "subModel": [
+              {
+                "id": "皮肤情况_皮疹_部位_1",
+                "viewName": "AssessTextInputView",
+                "dataType": "字符",
+                "text": "部位",
+                "dataValue": "",
+                "textSize": "Normal",
+                "modelType": "SubValue",
+                "checked": false,
+                "unit": ""
+              }
+            ]
+          },
+          {
+            "id": "皮肤情况_其他",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "其他",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "皮肤情况_1",
+            "viewName": "EditText",
+            "dataType": "字符",
+            "text": "",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": ""
+          },
+          {
+            "id": "皮肤情况_完整",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "完整",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "皮肤情况_不完整",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "不完整",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "皮肤情况_压疮",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "压疮",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": "",
+            "subModel": [
+              {
+                "id": "皮肤情况_压疮_部位_1",
+                "viewName": "AssessTextInputView",
+                "dataType": "字符",
+                "text": "部位",
+                "dataValue": "",
+                "textSize": "Normal",
+                "modelType": "SubValue",
+                "checked": false,
+                "unit": ""
+              },
+              {
+                "id": "皮肤情况_压疮_程度_1",
+                "viewName": "AssessTextInputView",
+                "dataType": "字符",
+                "text": "程度",
+                "dataValue": "",
+                "textSize": "Normal",
+                "modelType": "SubValue",
+                "checked": false,
+                "unit": ""
+              },
+              {
+                "id": "皮肤情况_压疮_面积_1",
+                "viewName": "AssessDoubleInputView",
+                "dataType": "数值",
+                "text": "面积",
+                "dataValue": "",
+                "textSize": "Normal",
+                "modelType": "SubValue",
+                "checked": false,
+                "unit": "cm x cm"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "高危评估",
+    "viewName": "TextView",
+    "dataType": "字符",
+    "text": "高危评估",
+    "dataValue": "",
+    "textSize": "Large",
+    "modelType": "Group",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "自理能力",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "自理能力：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "自理能力_全部自理",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "全部自理",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "自理能力_轻度依赖",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "轻度依赖",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "自理能力_中度依赖",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "中度依赖",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          },
+          {
+            "id": "自理能力_重度依赖",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "重度依赖",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "checked": false,
+            "unit": ""
+          }
+        ]
+      },
+      {
+        "id": "跌倒危险评估",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "跌倒危险评估：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "跌倒危险评估_无",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "无",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "跌倒危险评估_有",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "有",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "跌倒危险评估_评分_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "评分",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "分"
+          }
+        ]
+      },
+      {
+        "id": "压疮危险因素评估",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "压疮危险因素评估：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "压疮危险因素评估_无",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "无",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "压疮危险因素评估_有",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "有",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "压疮危险因素评估_评分_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "评分",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "分"
+          }
+        ]
+      },
+      {
+        "id": "疼痛评估",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "疼痛评估：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "疼痛评估_无",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "无",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "疼痛评估_轻度",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "轻度",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "疼痛评估_中度",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "中度",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "疼痛评估_重度",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "重度",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "疼痛评估_部位_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "字符",
+            "text": "部位",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "疼痛评估_评分_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "评分",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "分",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "id": "管道评估",
+        "viewName": "AssessCheckBox",
+        "dataType": "字符",
+        "text": "管道评估：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "管道评估_无",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "无",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "管道评估_有",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "有",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "管道评估_管道名称_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "字符",
+            "text": "管道名称",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "管道评估_脱管高危",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "脱管高危",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "管道评估_评分_1",
+            "viewName": "AssessTextInputView",
+            "dataType": "数值",
+            "text": "评分",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "分",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "id": "昏迷评分",
+        "viewName": "TextView",
+        "dataType": "字符",
+        "text": "昏迷评分：",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Item",
+        "unit": "",
+        "subModel": [
+          {
+            "id": "昏迷评分_无",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "无",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          },
+          {
+            "id": "昏迷评分_有",
+            "viewName": "CheckBox",
+            "dataType": "布尔",
+            "text": "有",
+            "dataValue": "",
+            "textSize": "Normal",
+            "modelType": "Value",
+            "unit": "",
+            "checked": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "评估日期",
+    "viewName": "TextView",
+    "dataType": "日期",
+    "text": "评估日期：",
+    "dataValue": "",
+    "textSize": "Normal",
+    "modelType": "Item",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "评估日期_1",
+        "viewName": "AssessCalendar",
+        "dataType": "日期",
+        "text": "",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": ""
+      }
+    ]
+  },
+  {
+    "id": "评估护士",
+    "viewName": "TextView",
+    "dataType": "字符",
+    "text": "评估护士：",
+    "dataValue": "",
+    "textSize": "Normal",
+    "modelType": "Item",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "评估护士_1",
+        "viewName": "EditText",
+        "dataType": "字符",
+        "text": "",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": ""
+      }
+    ]
+  }
+]

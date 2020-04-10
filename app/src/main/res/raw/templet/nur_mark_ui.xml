@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Layout>
+    <UniTextView id="tv" Text="营养评估" TextSize="25" />
+    <TitleEdit id="te1" InputType="number" Text="得分1" />
+    <TitleEdit id="te2" InputType="number" Text="得分2" />
+    <UniButton id="btn1" Text="确定" />
+</Layout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_item_selectSickbed_bedLabel"
+        style="@style/text_gray_level4"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/view_horizontal_margin_parent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:maxEms="6"
+        android:text="113+床" />
+
+    <TextView
+        android:id="@+id/tv_item_selectSickbed_patientName"
+        style="@style/text_lightBlack_level4"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="马则乃白之父乃黑" />
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_lightGrayR"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_dialog_title"></include>
+
+    <LinearLayout
+        android:id="@+id/ll_seekBarDialog_seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_seekBarDialog_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_content_level_3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_horizontal_margin_parent"
+            android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_seekBarDialog_minProgressText"
+                style="@style/text_gray_level3"
+                android:layout_gravity="center_vertical"
+                android:text="0%" />
+
+            <SeekBar
+                android:id="@+id/sb_seekBarDialog_seekBar"
+                style="@style/Widget.SeekBar.Normal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_seekBarDialog_maxProgressText"
+                style="@style/text_gray_level3"
+                android:layout_gravity="center_vertical"
+                android:text="100%" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/include_dialog_bottom"></include>
+</LinearLayout>

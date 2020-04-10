@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.setting.SystemSettingsActivity">
+
+    <include layout="@layout/include_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_lightGrayR">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_systemSettings_lock"
+                style="@style/text_lightBlack_level2_matchParent"
+                android:layout_marginTop="@dimen/view_vertical_margin_brother"
+                android:text="@string/btn_lock"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_systemSettings_switchAccount"
+                style="@style/text_lightBlack_level2_matchParent"
+                android:layout_marginTop="@dimen/line_size_dp_1"
+                android:text="@string/btn_switchAccount"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_systemSettings_changePassword"
+                style="@style/text_lightBlack_level2_matchParent"
+                android:layout_marginTop="@dimen/line_size_dp_1"
+                android:text="@string/btn_changePassword"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_systemSettings_bedRange"
+                style="@style/text_lightBlack_level2_matchParent"
+                android:layout_marginTop="@dimen/line_size_dp_1"
+                android:text="@string/btn_bed_range"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_systemSettings_serviceAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_vertical_margin_brother"
+                android:orientation="vertical">
+
+                <TextView
+
+                    style="@style/text_lightBlack_level2_matchParent"
+                    android:text="@string/btn_serviceAddress" />
+
+                <TextView
+                    android:id="@+id/tv_systemSettings_ServiceAddress"
+                    style="@style/text_gray_level4_matchParent"
+                    android:text="10.10.117.51:8080" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_systemSettings_cameraScan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line_size_dp_1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/cb_systemSettings_cameraScan"
+                    style="@style/text_lightBlack_level2_matchParent"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/selector_checkbox_login"
+                    android:text="@string/btn_cameraScan" />
+
+                <TextView
+                    android:id="@+id/tv_systemSettings_cameraScan"
+                    style="@style/text_gray_level4_matchParent"
+                    android:text="@string/message_cameraScan_desc" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_systemSettings_exit"
+                style="@style/text_lightBlack_level2_matchParent"
+                android:layout_marginTop="@dimen/view_vertical_margin_brother"
+                android:text="@string/btn_exit"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

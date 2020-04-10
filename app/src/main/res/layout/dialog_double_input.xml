@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_dialog_title"></include>
+
+    <TextView
+        android:id="@+id/tv_doubleInputDialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_horizontal_margin_parent"
+        android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="我是输入框的说明message   骄傲骄傲家kkk啦啦啦啦l;流量卡就打发斯蒂芬看得见佛品牌【【onlzijfdmlpooiojjjyqh"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_content_level_4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/view_horizontal_margin_parent"
+        android:layout_marginTop="@dimen/view_vertical_margin_brother"
+        android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_doubleInputDialog_inputDesc1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/view_horizontal_margin_brother"
+            android:gravity="center_vertical"
+            android:text="服务器地址"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_content_level_4" />
+
+        <EditText
+            android:id="@+id/et_doubleInputDialog_input1"
+            style="@style/editText_common"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/view_horizontal_margin_parent"
+        android:layout_marginTop="@dimen/view_vertical_margin_parent"
+        android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_doubleInputDialog_inputDesc2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/view_horizontal_margin_brother"
+            android:gravity="center_vertical"
+            android:text="服务器地址"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_content_level_4" />
+
+        <EditText
+            android:id="@+id/et_doubleInputDialog_input2"
+            style="@style/editText_common"></EditText>
+    </LinearLayout>
+
+    <include layout="@layout/include_dialog_bottom"></include>
+</LinearLayout>

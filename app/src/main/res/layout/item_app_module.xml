@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_appModule_icon"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:src="@mipmap/module_assessment" />
+
+    <TextView
+        android:id="@+id/tv_appModule_name"
+        style="@style/text_lightBlack_level2"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="入院评估" />
+</LinearLayout>

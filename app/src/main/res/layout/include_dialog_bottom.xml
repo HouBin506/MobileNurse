@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:background="@color/bg_lightGrayB"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/view_dialog_bottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size_dp_0_5"
+        android:background="@color/gray_divider"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dialog_negative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_content_level_3" />
+
+        <View
+            android:id="@+id/view_dialog_bottomCenter"
+            android:layout_width="@dimen/line_size_dp_0_5"
+            android:layout_height="match_parent"
+            android:background="@color/gray_divider"></View>
+
+        <TextView
+            android:id="@+id/tv_dialog_positive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/btn_sure"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_content_level_3" />
+    </LinearLayout>
+</LinearLayout>

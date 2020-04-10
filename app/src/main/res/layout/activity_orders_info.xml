@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title"></include>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_ordersInfo_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_ordersInfo_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/view_vertical_margin_screen"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginBottom="@dimen/view_vertical_margin_screen"
+                android:orientation="vertical">
+
+                <com.herenit.mobilenurse.custom.widget.bll.PatientBasicInfoView
+                    android:id="@+id/pbiv_ordersInfo_patientBasicInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></com.herenit.mobilenurse.custom.widget.bll.PatientBasicInfoView>
+
+                <TextView
+                    android:id="@+id/tv_orderContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="@dimen/view_vertical_margin_brother"
+                    android:background="@color/bg_lightGrayB"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/view_horizontal_margin_screen"
+                    android:text="@string/common_orderContent"
+                    android:textColor="@color/bg_royalBlue"
+                    android:textSize="@dimen/text_content_level_3" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_ordersInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_vertical_margin_screen"
+        android:background="@color/white"></View>
+</LinearLayout>

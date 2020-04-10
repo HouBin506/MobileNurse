@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?><!--标题栏布局 ，从左到右：ImageView、TextView、TextView-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/app_titleBar_height"
+    android:background="@color/bg_title">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/view_horizontal_margin_parent">
+
+        <TextView
+            android:id="@+id/tv_title_left"
+            style="@style/text_title_white_level2"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxEms="7" />
+
+        <ImageView
+            android:id="@+id/img_title_left"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_title_list"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_title_center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_title_center"
+            style="@style/text_title_white_level1"
+            android:layout_marginLeft="@dimen/view_horizontal_margin_brother"
+            android:layout_marginRight="@dimen/view_horizontal_margin_brother"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="8" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+        android:layout_toRightOf="@id/rl_title_center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_title_right1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/tv_title_right1"
+                style="@style/text_title_white_level3"
+                android:ellipsize="end"
+                android:lines="1" />
+
+            <ImageView
+                android:id="@+id/img_title_right1"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_title_right2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/tv_title_right2"
+                style="@style/text_title_white_level3"
+                android:ellipsize="end"
+                android:lines="1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_title_right2"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_centerVertical="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_title_right3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_title_right3"
+                style="@style/text_title_white_level3"
+                android:ellipsize="end"
+                android:lines="1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_title_right3"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

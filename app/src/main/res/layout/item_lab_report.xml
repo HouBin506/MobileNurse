@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_labReport_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size_dp_0_5"
+        android:background="@color/gray_divider"></View>
+
+
+    <TextView
+        android:id="@+id/tv_labReport_iteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingBottom="@dimen/dp_3"
+        android:text="★糖类抗原测定CA15-3,甲胎蛋白（AFP）测定,癌胚抗原（CEA）测定,细胞角蛋白19片段测定,神经元特异性烯醇化酶（NSE）测定,★糖类抗原测定CA724,★糖尿病检测: 胰岛素+C肽,★糖类抗原测定CA125,★甲状腺功能1（五项）,★糖类抗原测定CA199"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/text_content_level_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/requestDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_requestDateTime"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_content_level_6" />
+
+            <TextView
+                android:id="@+id/tv_labReport_requestDateTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="2019-08-28 11:20"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_content_level_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/sampleDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_sampleDateTime"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_content_level_6" />
+
+            <TextView
+                android:id="@+id/tv_labReport_sampleDateTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="2019-08-28 11:20"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_content_level_6" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/labNo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_labNo"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_content_level_6" />
+
+            <TextView
+                android:id="@+id/tv_labReport_labNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="1234567890"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_content_level_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/specimen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_specimen"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_content_level_6" />
+
+            <TextView
+                android:id="@+id/tv_labReport_specimen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="血清尿液"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_content_level_6" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+            <TextView
+                android:id="@+id/requestDept"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_requestDept"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_content_level_6" />
+
+            <TextView
+                android:id="@+id/tv_labReport_requestDept"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="血液风湿免疫科病区"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_content_level_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/resultStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_resultStatus"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_content_level_6" />
+
+            <TextView
+                android:id="@+id/tv_labReport_resultStatus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="标本接收"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_content_level_6" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

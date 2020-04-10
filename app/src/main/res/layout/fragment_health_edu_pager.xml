@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_healthEduPager_rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_healthEduPager_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadMore="false">
+
+        <LinearLayout
+            android:id="@+id/srl_examReportPager_refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_lightGrayR"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/dp_40"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/ll_healthEduPager_selectTip"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/img_tip"
+                            android:layout_width="@dimen/dp_25"
+                            android:layout_height="@dimen/dp_25"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_notice_normal"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/img_tip"
+                            android:gravity="center_vertical"
+                            android:text="@string/message_selectHealthEduItem"
+                            android:textColor="@color/yellow"></TextView>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_healthEduPager_selectedItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:maxLines="4"
+                        android:text="解决解决军解决解决军军军军军解决asdfasdfasdfasfasdfasdfasdf解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军解决解决军军军军军军军军军"
+                        android:textColor="@color/green_selected_bg"
+                        android:textSize="@dimen/text_content_level_2"></TextView>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_healthEduPager_nextStep"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_25"
+                    android:background="@drawable/shape_bg_btn_blue"
+                    android:text="@string/btn_nextStep"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_content_level_6"></Button>
+            </LinearLayout>
+
+            <com.herenit.mobilenurse.custom.widget.layout.MultiListViewPager
+                android:id="@+id/vp_healthEduPager_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_5"
+                android:overScrollMode="never"></com.herenit.mobilenurse.custom.widget.layout.MultiListViewPager>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,171 @@
+//apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+//申请使用butterknife插件
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    signingConfigs {
+        release {
+            storeFile file('E:\\Work\\HerenIt\\Subversion\\MobileNurse\\2-Sourcecode\\Client\\Branches\\Zhejiang_ShengRenMin\\mobile_nurse_keystore.jks')
+            storePassword 'herenit'
+            keyAlias = 'MobileNurse'
+            keyPassword 'MobileNurse'
+        }
+    }
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    useLibrary 'org.apache.http.legacy'
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+//        applicationId "com.herenit.mobilenurse"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        multiDexEnabled true
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        testInstrumentationRunner rootProject.ext.dependencies["androidJUnitRunner"]
+    }
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "true"
+            buildConfigField "boolean", "IS_MODULE", rootProject.ext.configField["isModule"]
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        product {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            buildConfigField "boolean", "IS_MODULE", rootProject.ext.configField["isModule"]
+            minifyEnabled true
+//          shrinkResources用于缩小apk大小，删除无用的文件（没有引用的资源），一般配合minifyEnabled使用，两者都为true时才起作用
+//            shrinkResources true
+//          Zipalign优化，帮助操作系统更高效的根据请求索引资源，使得Android与应用程序之间的交互更有效率
+            zipAlignEnabled true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            multiDexKeepProguard file('multidex-config.pro')
+        }
+    }
+    //分包
+    dexOptions {
+        javaMaxHeapSize "4g"
+        jumboMode = true
+        preDexLibraries = false
+        additionalParameters = [
+                '--multi-dex',//多分包
+                '--set-max-idx-number=60000'//每个包内方法数上限
+        ]
+    }
+
+//    lint错误检查
+    lintOptions {
+        //关闭指定的lint检查
+        disable "InvalidPackage"
+        disable "ResourceType"
+        //true：错误发生后停止Gradle构建，false：发生错误时不中断编译
+        abortOnError false
+    }
+    //修改apk包名,AS3.0之后发生了改变，与之前不一样
+//    applicationVariants.all { variant ->
+//        variant.outputs.all { output ->
+//            if (variant.buildType.name == "debug") {
+//                output.outputFileName = "iou_v${android.defaultConfig.versionName}_debug_${getCurrentTime()}.apk"
+//            } else if (variant.buildType.name == "release") {
+////                output.outputFileName = "iou_v${android.defaultConfig.versionName}_release_${getCurrentTime()}.apk"
+//                output.outputFileName = "MobileNurse.apk"
+//            }
+//        }
+//    }
+}
+
+
+//ORM框架GreenDao基本配置
+greendao {
+    //指定数据库版本号
+    schemaVersion 5
+    //通过gradle插件生成的数据库相关文件的包名，默认为Entity所在的包名
+    daoPackage 'com.herenit.mobilenurse.datastore.orm.greendao.daopackage'
+    //生成的数据库文件默认为build/generated/source/greendao，
+    //自定义生成数据库文件目录，可以将生成的文件放入Java目录中，而不是Build中。这样就不用额外的设置资源目录了
+    targetGenDir 'src/main/java'
+    //设置为true自动生成单元测试
+    generateTests false
+    //应存储生成的单元测试的基本根目录，默认为 src / androidTest / java。
+    targetGenDirTests 'src/main/java'
+}
+
+def getCurrentTime() {
+    return new Date().format("yyyy-MM-dd HH:mm:ss").replace(" ", "").replace("-", "").replace(":", "");
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //    implementation project(':autolayout')
+
+    // 添加到 app 的 build.gradle，注意名字规则和上面配置本地仓库之间的关联
+//    implementation 'com.herenit.arms:library-arms:1.0.0'
+//    implementation 'com.github.HouBin506:arms:1.0.0'
+    implementation 'com.github.HouBin506:ArmsApp:1.0.0'
+
+    api rootProject.ext.dependencies["annotations"]
+    implementation rootProject.ext.dependencies["progressmanager"]
+    implementation rootProject.ext.dependencies["retrofit-url-manager"]
+    implementation rootProject.ext.dependencies["paginate"]
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+    implementation rootProject.ext.dependencies["constraint-layout"]
+    implementation rootProject.ext.dependencies["support-v4"]
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor(rootProject.ext.dependencies["butterknife-compiler"]) {
+        exclude module: 'support-annotations'
+    }
+    //support
+    api(rootProject.ext.dependencies["design"]) {
+        exclude module: 'support-annotations'
+        exclude module: 'appcompat-v7'
+        exclude module: 'support-v4'
+        exclude module: 'recyclerview-v7'
+    }
+    implementation rootProject.ext.dependencies["cardview-v7"]
+    implementation rootProject.ext.dependencies["eventbus"]
+    //现在已经将 Demo 中的屏幕适配框架从 AndroidAutoLayout 替换为 AndroidAutoSize, AndroidAutoLayout 和 AndroidAutoSize 可以在项目中共存
+    //所以旧项目只要依赖 arms-autolayout 即可兼容之前的旧页面, 新页面可以使用 AndroidAutoSize 进行适配, 等有时间了再将旧页面全部替换为 AndroidAutoSize
+    //    implementation rootProject.ext.dependencies["autosize"]
+    //Arms 核心库不再包含 Glide, 想使用其他图片加载框架或者想自行扩展 ImageLoaderStrategy 就不要依赖 arms-imageloader-glide
+    //依赖 arms-imageloader-glide 后还需要在 GlobalConfiguration 中手动注册 GlideImageLoaderStrategy
+    //    implementation 'me.jessyan:arms-imageloader-glide:2.5.0'
+    implementation rootProject.ext.dependencies["lifecyclemodel"]
+    implementation rootProject.ext.dependencies["fastjson"]
+    //refresh下拉刷新上拉加载SDK，使用SmartRefreshLayout
+    //1.1.0 API改动过大，老用户升级需谨慎
+    implementation rootProject.ext.dependencies["SmartRefreshLayout"]
+    //    implementation rootProject.ext.dependencies["SmartRefreshHeader"]//没有使用特殊Header，可以不加这行
+    //    implementation 'com.android.support:appcompat-v7:25.3.1'//版本 23以上（必须）   本项目已有
+    //滚轮选择器控件。提供了时间选择器、省市选择器等控件
+    implementation rootProject.ext.dependencies["Android-PickerView"]
+    //ListView的侧滑菜单框架
+    implementation rootProject.ext.dependencies["swipemenulistview"]
+    //数据存储ORM   GreenDao
+    implementation rootProject.ext.dependencies["greendao"]
+    //轻量级折线图
+//    implementation rootProject.ext.dependencies["SmallChart"]
+    implementation rootProject.ext.dependencies["MPAndroidChart"]
+    //分包
+    implementation rootProject.ext.dependencies["multidex"]
+    //Router
+    annotationProcessor rootProject.ext.dependencies["router-compiler"]
+    //SDK 版本低于26.1.0时，需要添加android.arch.lifecycle:extensions:1.0.0-alpha4，才能使用lifecycle框架
+    implementation(rootProject.ext.dependencies["lifecycle-extensions"])
+    //test
+    testImplementation rootProject.ext.dependencies["junit"]
+    debugImplementation rootProject.ext.dependencies["canary-debug"]
+    releaseImplementation rootProject.ext.dependencies["canary-release"]
+    testImplementation rootProject.ext.dependencies["canary-release"]
+}

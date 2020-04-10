@@ -1,0 +1,77 @@
+/*床位一览筛选条件*/
+[
+  {
+    "conditionType": "conditionType_allOrNew",
+    "isMultipleChoice": false,
+    "isSingle": true,
+    "conditions": [
+      {
+        "id": "All",
+        "name": "所有床位",
+        "isAll": true,
+        "isChecked": true
+      },
+      {
+        "id": "New",
+        "name": "今日入科",
+        "isAll": false,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "conditionType": "conditionType_operationTime",
+    "isMultipleChoice": false,
+    "isSingle": true,
+    "conditions": [
+      {
+        "id": "All",
+        "name": "所有手术床位",
+        "isAll": true,
+        "isChecked": false
+      },
+      {
+        "id": "TwoDaysLater",
+        "name": "后天手术",
+        "isAll": false,
+        "isChecked": false
+      },
+      {
+        "id": "Tomorrow",
+        "name": "明日手术",
+        "isAll": false,
+        "isChecked": false
+      },
+      {
+        "id": "Today",
+        "name": "今日手术",
+        "isAll": false,
+        "isChecked": false
+      },
+      {
+        "id": "Yesterday",
+        "name": "昨日手术",
+        "isAll": false,
+        "isChecked": false
+      },
+      {
+        "id": "InPastThreeDays",
+        "name": "过去三天内手术",
+        "isAll": false,
+        "isChecked": false
+      },
+      {
+        "id": "InPastWeek",
+        "name": "过去一周内手术",
+        "isAll": false,
+        "isChecked": false
+      },
+      {
+        "id": "InPastMonth",
+        "name": "过去一个月内手术",
+        "isAll": false,
+        "isChecked": false
+      }
+    ]
+  }
+]

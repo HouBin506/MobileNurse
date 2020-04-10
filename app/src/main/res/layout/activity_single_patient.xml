@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_single_patient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.main.SinglePatientActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_main_content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title"></include>
+
+        <FrameLayout
+            android:id="@+id/fl_main_container_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size_dp_2"
+            android:background="@color/bg_lightGrayR"></View>
+
+        <com.herenit.mobilenurse.custom.widget.barview.BottomBar
+            android:id="@+id/bb_main_bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bottomBar_height"></com.herenit.mobilenurse.custom.widget.barview.BottomBar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_content_drawer"
+        android:layout_width="@dimen/app_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_drawer_layout_single_patient"></include>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

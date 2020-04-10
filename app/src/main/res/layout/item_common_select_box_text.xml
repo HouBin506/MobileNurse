@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40"
+
+    android:orientation="horizontal">
+    <!--带有选择框的列表Item-->
+    <CheckBox
+        android:id="@+id/cb_item_commonSelectBoxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_checkbox_circle"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/tv_item_commonSelectBoxText"
+        style="@style/text_lightBlack_level3"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="我是text啊啊啊啊啊啊啊啊" />
+</LinearLayout>

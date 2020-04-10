@@ -1,0 +1,90 @@
+[
+  {
+    "conditionType": "conditionType_executeTime",
+    "isMultipleChoice": false,
+    "isSingle": false,
+    "conditions": [
+      {
+        "id": "Today",
+        "name": "今天执行",
+        "isAll": false,
+        "isChecked": true
+      },
+      {
+        "id": "Yesterday",
+        "name": "昨天执行",
+        "isAll": false,
+        "isChecked": false
+      },
+      {
+        "id": "Tomorrow",
+        "name": "明天执行",
+        "isAll": false,
+        "isChecked": false
+      },
+      {
+        "id": "Calendar",
+        "name": "",
+        "isAll": false,
+        "isChecked": false,
+        "format": "yyyy-MM-dd"
+      }
+    ]
+  },
+  {
+    "conditionType": "conditionType_repeatIndicator",
+    "isMultipleChoice": false,
+    "isSingle": false,
+    "conditions": [
+      {
+        "id": "all",
+        "name": "所有医嘱状态",
+        "isAll": true,
+        "isChecked": true
+      },
+      {
+        "id": "1",
+        "name": "长期",
+        "isAll": false,
+        "isChecked": false
+      },
+      {
+        "id": "0",
+        "name": "临时",
+        "isAll": false,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "conditionType": "conditionType_executeResult",
+    "isMultipleChoice": false,
+    "isSingle": false,
+    "conditions": [
+      {
+        "id": "all",
+        "name": "所有执行结果",
+        "isAll": false,
+        "isChecked": true
+      },
+      {
+        "id": "0",
+        "name": "未执行",
+        "isAll": false,
+        "isChecked": false
+      },
+      {
+        "id": "1",
+        "name": "已执行",
+        "isAll": false,
+        "isChecked": false
+      },
+      {
+        "id": "2",
+        "name": "未核对",
+        "isAll": false,
+        "isChecked": false
+      }
+    ]
+  }
+]

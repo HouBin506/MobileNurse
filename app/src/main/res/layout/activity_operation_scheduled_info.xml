@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--床号，病人-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_8">
+
+                <TextView
+                    android:id="@+id/tv_bedLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:textColor="@color/text_blue"
+                    android:textSize="@dimen/text_content_level_3" />
+
+                <TextView
+                    android:id="@+id/tv_static_bed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:layout_toRightOf="@id/tv_bedLabel"
+                    android:text="床"
+                    android:textColor="@color/text_blue"
+                    android:textSize="@dimen/text_content_level_3" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_static_bed"
+                    android:textColor="@color/text_blue"
+                    android:textSize="@dimen/text_content_level_3" />
+
+                <TextView
+                    android:id="@+id/tv_emergency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_content_level_3" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+
+            <!--手术时间-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_operationTime" />
+
+                <TextView
+                    android:id="@+id/tv_scheduledDateTime"
+                    style="@style/text_gray_level3"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+            <!--手术状态-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_operationStatus" />
+
+                <TextView
+                    android:id="@+id/tv_ackIndicator"
+                    style="@style/text_gray_level3"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+
+            <!--手术医生-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_operationDoctor" />
+
+                <TextView
+                    android:id="@+id/tv_operatorDoctor"
+                    style="@style/text_gray_level3"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+            <!--诊断-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/diagnose"
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_diagnose" />
+
+                <TextView
+                    android:id="@+id/tv_diagBeforeOperation"
+                    style="@style/text_gray_level3"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="right"
+                    android:maxLines="3"
+                    android:minHeight="@dimen/dp_40" />
+            </LinearLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+
+            <!--手术内容-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_operationName" />
+
+                <TextView
+                    android:id="@+id/tv_operationName"
+                    style="@style/text_gray_level3"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="5"
+                    android:minHeight="@dimen/dp_40" />
+            </LinearLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+            <!--手术室-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_operationDeptName" />
+
+                <TextView
+                    android:id="@+id/tv_operatingRoomName"
+                    style="@style/text_gray_level3"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+            <!--台次-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_operationSequence" />
+
+                <TextView
+                    android:id="@+id/tv_operationSequence"
+                    style="@style/text_gray_level3"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+            <!--手术等级-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_operationScale" />
+
+                <TextView
+                    android:id="@+id/tv_operatingScale"
+                    style="@style/text_gray_level3"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+
+            <!--申请医生-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_applyDoctor" />
+
+                <TextView
+                    android:id="@+id/tv_enteredBy"
+                    style="@style/text_gray_level3"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+            <!--手术助手-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_operationAssistant" />
+
+                <TextView
+                    android:id="@+id/tv_assistantNurse"
+                    style="@style/text_gray_level3"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+
+            <!--麻醉方式-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_anaesthesiaMethod" />
+
+                <TextView
+                    android:id="@+id/tv_anaesthesiaMethod"
+                    style="@style/text_gray_level3"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+            <!--麻醉医生-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_anesthesiaDoctor" />
+
+                <TextView
+                    android:id="@+id/tv_anesthesiaDoctor"
+                    style="@style/text_gray_level3"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+
+            <!--输血医生-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_bloodDoctor" />
+
+                <TextView
+                    android:id="@+id/tv_bloodDoctor"
+                    style="@style/text_gray_level3"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+
+            <!--台上护士-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_operationNurse" />
+
+                <TextView
+                    android:id="@+id/tv_operationNurse"
+                    style="@style/text_gray_level3"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+
+            <!--供应护士-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    style="@style/text_gray_level3"
+                    android:text="@string/common_supplyNurse" />
+
+                <TextView
+                    android:id="@+id/tv_supplyNurse"
+                    style="@style/text_gray_level3"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_divider_0_8"></include>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

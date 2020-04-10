@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_nurseRound_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadMore="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_nurseRoundPager_recordTimeAndHistory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:background="@color/bg_lightGrayB">
+
+                <TextView
+                    android:id="@+id/tv_nurseRoundPager_recordDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/view_horizontal_margin_screen"
+                    android:drawableRight="@drawable/ic_calendar_small_blue"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/bg_royalBlue"
+                    android:textSize="@dimen/text_content_level_1" />
+
+                <TextView
+                    android:id="@+id/tv_nurseRoundPager_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/view_horizontal_margin_screen"
+                    android:drawableRight="@mipmap/ic_history_small"
+                    android:gravity="center_vertical"
+                    android:text="@string/btn_historyRecord"
+                    android:textColor="@color/bg_royalBlue"
+                    android:textSize="@dimen/text_content_level_1" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_nurseRoundPager_roundType"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_nurseRoundPager_commonRound"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_color_rb"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/common_otherRound"
+                    android:textColor="@drawable/selector_text_color_white_gray"
+                    android:textSize="@dimen/text_content_level_2" />
+
+                <RadioButton
+                    android:id="@+id/rb_nurseRoundPager_infusionRound"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_bg_color_rb"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/common_infusionRound"
+                    android:textColor="@drawable/selector_text_color_white_gray"
+                    android:textSize="@dimen/text_content_level_2" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_nurseRoundPager_commonRound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_10"></android.support.v7.widget.RecyclerView>
+
+                <com.herenit.mobilenurse.custom.widget.layout.MNScrollView
+                    android:id="@+id/mnSv_nurseRoundPager_infusionRound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rv_nurseRoundPager_orderList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/view_nurseRoundPager_orderRoundDivider"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_20"
+                            android:background="@color/bg_lightGrayB"></View>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="blocksDescendants">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rv_nurseRoundPager_infusionRound"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dp_10"></android.support.v7.widget.RecyclerView>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </com.herenit.mobilenurse.custom.widget.layout.MNScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</FrameLayout>

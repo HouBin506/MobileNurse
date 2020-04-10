@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_lightGrayR"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/view_item_nurseRoundHistory_divider"
+        layout="@layout/include_divider_0_8"></include>
+
+    <RelativeLayout
+        android:id="@+id/rl_item_nurseRoundHistory_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5">
+
+        <TextView
+            android:id="@+id/tv_item_nurseRoundHistory_title"
+            style="@style/text_lightBlack_level2"
+            android:layout_centerVertical="true"
+            android:text="在位情况" />
+
+        <TextView
+            android:id="@+id/tv_item_nurseRoundHistory_timePoint"
+            style="@style/text_lightBlack_level2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="20.9-08-13 14:54" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_item_nurseRoundHistory_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_content_level_4" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_nurseRoundHistory_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5">
+
+        <TextView
+            android:id="@+id/tv_item_nurseRoundHistory_itemName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_content_level_3" />
+
+        <TextView
+            android:id="@+id/tv_item_nurseRoundHistory_itemValue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_content_level_3" />
+
+    </LinearLayout>
+</LinearLayout>

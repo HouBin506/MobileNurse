@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Layout>
+    <!--<UniTextView id="tv1" Value="一般资料" TextSize="15" BackgroundColor="gray" TextColor="white" />-->
+    <!--<TitleEdit id="te_name1" InputType="text" Text="姓名" DataName="姓名" />-->
+    <!--<TitleEdit id="te_dept1" InputType="text" Text="科室" DataName="科室" />-->
+    <!--<TitleEdit id="te_bed1" InputType="text" Text="床号" DataName="床号" />-->
+    <!--<TitleEdit id="te_inpno" InputType="text" Text="住院号" Value="403250&amp;4" />-->
+    <!--<TitleEdit id="te_name2" InputType="text" Text="姓名" />-->
+    <!--<TitleEdit id="te_sex" InputType="text" Text="性别" Value="女" />-->
+    <!--<TitleEdit id="te_dept2" InputType="text" Text="科室" Value="神经内科病区" />-->
+    <!--<TitleEdit id="te_bed2" InputType="text" Text="床号" Value="13" />-->
+    <!--<TitleEdit id="te_marriage" InputType="text" Text="婚姻" Value="已婚" />-->
+    <!--<TitleEdit id="te_address" InputType="text" Text="地址" Value="泰安市岱岳区教委" />-->
+    <!--<TitleEdit id="te_age" InputType="text" Text="年龄" Value="76" />-->
+    <!--<TitleEdit id="te_culture" InputType="text" Text="文化程度" Value="中专" />-->
+    <!--<TitleEdit id="te_indate" InputType="text" Text="入科时间" Value="2014-12-15" />-->
+    <!--<TitleEdit id="te_inway" InputType="text" Text="入院方式" Value="轮椅" />-->
+    <!--<TitleEdit id="te_diagnose" InputType="text" Text="入院诊断" Value="脑梗死" />-->
+    <!--<TitleEdit id="te_feetype" InputType="text" Text="费用类别" Value="医保" />-->
+    <!--<TitleEdit id="te_nurlevel" InputType="text" Text="护理等级" Value="二级护理" />-->
+    <!--<TitleEdit id="te_history" InputType="text" Text="既往史" Value="高血压病史" />-->
+    <!--<TitleEdit id="te_famhistory" InputType="text" Text="家族史" Value="无" />-->
+    <!--<TitleEdit id="te_colDate" InputType="text" Text="收集资料时间" Value="2014-12-15" />-->
+    <!--<TitleEdit id="te_allergy" InputType="text" Text="过敏史" Value="无" />-->
+    <!--<TitleEdit id="te_allsource" InputType="text" Text="过敏源" Value="无" />-->
+    <!--<TitleEdit id="te_nurse" InputType="text" Text="责任护士" Value="张艳" />-->
+
+    <UniTextView id="tv2" Value="护理查体" TextSize="15" BackgroundColor="gray" TextColor="white" />
+    <TitleEdit id="te_temp" InputType="number" Text="体温|度" DataName="体温" />
+    <TitleEdit id="te_pulse" InputType="number" Text="脉搏|次/分" DataName="脉搏" />
+    <DoubleEdit id="de_pressure" InputType="number" Text="血压|/|mmHg" DataName="血压" />
+    <TitleEdit id="te_weight" InputType="text" Text="体重" DataName="体重" />
+    <Droplist id="dl_aware" Text="意识" DataSource="|正常|清醒|模糊|嗜睡" DataName="意识" />
+    <Droplist id="dl_face" Text="表情" DataSource="|安静|急躁" DataName="表情" />
+    <Droplist id="dl_tongkong" Text="瞳孔" DataSource="|等大等圆|不圆" DataName="瞳孔" />
+    <Droplist id="dl_light" Text="对光反射" DataSource="|灵敏|迟钝|消失" DataName="对光反射" />
+    <Droplist id="dl_nutrition" Text="营养" DataSource="|良好|不良" DataName="营养" />
+    <TitleEdit id="te_water" InputType="text" Text="水肿" DataName="水肿" />
+    <Droplist id="dl_bodyloc" Text="体位" DataSource="|自主体位|卧位" DataName="体位" />
+    <Droplist id="dl_listen" Text="听力" DataSource="|正常|异常" DataName="听力" />
+    <Droplist id="dl_eye" Text="视力" DataSource="|近视|正常|异常" DataName="视力" />
+    <Droplist id="dl_mouth" Text="口腔" DataSource="|无异常|正常|异常" DataName="口腔" />
+    <Droplist id="dl_teeth" Text="牙龈" DataSource="|正常|异常" DataName="牙龈" />
+    <Droplist id="dl_tee" Text="牙" DataSource="|正常|异常" DataName="牙" />
+    <Droplist id="dl_tongue" Text="舌头" DataSource="|色泽红润|苍白" DataName="舌头" />
+    <Droplist id="dl_skin" Text="皮肤粘膜" DataSource="|正常|异常" DataName="皮肤粘膜" />
+    <UniRadioGroup id="rg_yachuang" Text="压疮情况" DataSource="有|无" DataName="压疮情况" />
+    <UniRadioGroup id="rg_yinliu" Text="引流管" DataSource="有|无" DataName="引流管" />
+    <Droplist id="dl_lang" Text="语言" DataSource="|语言流畅|言语不清" DataName="语言" />
+    <UniRadioGroup id="rg_keshou" Text="咳嗽" DataSource="有|无" DataName="咳嗽" />
+    <UniRadioGroup id="rg_pain" Text="疼痛" DataSource="有|无" DataName="疼痛" />
+
+    <UniTextView id="tv3" Value="生活及自理程度" TextSize="15" BackgroundColor="gray" TextColor="white" />
+    <Droplist id="dl_eat" Text="饮食" DataSource="|正常|不良" DataName="饮食" />
+    <Droplist id="dl_food" Text="食欲" DataSource="|正常|不良" DataName="食欲" />
+    <Droplist id="dl_sleep" Text="睡眠" DataSource="|正常|不良" DataName="睡眠" />
+    <Droplist id="dl_activity" Text="活动能力" DataSource="|好|正常|不良" DataName="活动能力" />
+    <Droplist id="dl_mess" Text="排便" DataSource="|正常|不良" DataName="排便" />
+    <Droplist id="dl_piss" Text="排尿" DataSource="|正常|不良" DataName="排尿" />
+    <Droplist id="dl_self" Text="自理能力" DataSource="|好|正常|不良" DataName="自理能力" />
+    <Droplist id="dl_health" Text="健康意识" DataSource="|强|若" DataName="健康意识" />
+    <UniRadioGroup id="rg_smoke" Text="吸烟" DataSource="有|无" DataName="吸烟" />
+    <UniRadioGroup id="rg_drink" Text="饮酒" DataSource="有|无" DataName="饮酒" />
+    <UniRadioGroup id="rg_drug" Text="药物依赖" DataSource="有|无" DataName="药物依赖" />
+
+    <UniTextView id="tv4" Value="心理社会评估" TextSize="15" BackgroundColor="gray" TextColor="white" />
+    <Droplist id="dl_mood" Text="情绪" DataSource="|正常|不良" DataName="情绪" />
+    <Droplist id="dl_religen" Text="宗教信仰" DataSource="|有|无" DataName="宗教信仰" />
+    <Droplist id="dl_attitude" Text="住院态度" DataSource="|积极|消极" DataName="住院态度" />
+    <Droplist id="dl_society" Text="社会支持力" DataSource="|良好|一般" DataName="社会支持力" />
+
+    <UniTextView id="tv5" Value="阳性资料保存" TextSize="15" BackgroundColor="gray" TextColor="white" />
+    <TitleEdit id="te_info" InputType="text" Text="阳性资料" DataName="阳性资料" />
+    <TitleEdit id="te_risk" InputType="number" Text="压疮风险" DataName="压疮风险" />
+    <TitleEdit id="te_nurmark" InputType="number" Text="营养评分" DataName="营养评分" />
+
+    <DatePicker id="dt" Text="评估时间" />
+
+    <UniButton id="btn_save" Text="确认" />
+</Layout>

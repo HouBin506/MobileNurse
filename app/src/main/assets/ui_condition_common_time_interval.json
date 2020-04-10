@@ -1,0 +1,26 @@
+[
+  {
+    "name": "全部",
+    "code": "All"
+  },
+  {
+    "name": "当日",
+    "code": "Today"
+  },
+  {
+    "name": "3天内",
+    "code": "InPastThreeDays"
+  },
+  {
+    "name": "1周内",
+    "code": "InPastWeek"
+  },
+  {
+    "name": "1个月内",
+    "code": "InPastMonth"
+  },
+  {
+    "name": "3个月内",
+    "code": "InPastThreeMonth"
+  }
+]

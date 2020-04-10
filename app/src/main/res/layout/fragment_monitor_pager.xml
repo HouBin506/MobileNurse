@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/srl_monitorPager_refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:srlEnableLoadMore="false">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.herenit.mobilenurse.custom.widget.bll.PatientBasicInfoView
+                android:id="@+id/pbiv_monitorPager_patientBasicInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.herenit.mobilenurse.custom.widget.bll.PatientBasicInfoView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/bg_lightGrayB"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_monitorInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@color/bg_light_gray"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_monitorCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_monitorCode"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="@string/common_monitorCode"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_monitorPager_monitorCode"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_toRightOf="@id/tv_monitorCode"
+                        android:gravity="right|center_vertical"
+                        android:lines="1"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_bindingDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_bindingDateTime"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="@string/common_bindingDateTime"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_monitorPager_bindingDateTime"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_toRightOf="@id/tv_bindingDateTime"
+                        android:gravity="right|center_vertical"
+                        android:lines="1"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_bindingNurse"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_bindingNurse"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="@string/common_bindingNurse"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_monitorPager_bindingNurse"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_toRightOf="@id/tv_bindingNurse"
+                        android:gravity="right|center_vertical"
+                        android:lines="1"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_unbindDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_unbindDateTime"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="@string/common_unbindDateTime"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_monitorPager_unbindDateTime"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_toRightOf="@id/tv_unbindDateTime"
+                        android:gravity="right|center_vertical"
+                        android:lines="1"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_unbindNurse"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_unbindNurse"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="@string/common_unbindNurse"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_monitorPager_unbindNurse"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_toRightOf="@id/tv_unbindNurse"
+                        android:gravity="right|center_vertical"
+                        android:lines="1"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_currentStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_currentStatus"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="@string/common_currentStatus"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_monitorPager_currentStatus"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_toRightOf="@id/tv_currentStatus"
+                        android:gravity="right|center_vertical"
+                        android:lines="1"></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_memo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@color/white"
+                    android:minHeight="@dimen/dp_40">
+
+                    <TextView
+                        android:id="@+id/tv_memo"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="@string/common_memo"></TextView>
+
+                    <TextView
+                        android:id="@+id/tv_monitorPager_memo"
+                        style="@style/text_lightBlack_level2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_toLeftOf="@id/img_monitorPager_memoArrow"
+                        android:layout_toRightOf="@id/tv_memo"
+                        android:gravity="right|center_vertical"
+                        android:lines="1"
+                        android:minHeight="@dimen/dp_40"></TextView>
+
+                    <ImageView
+                        android:id="@+id/img_monitorPager_memoArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_arrow_right_gray"></ImageView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

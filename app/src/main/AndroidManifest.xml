@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.herenit.mobilenurse">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application
+        android:name=".app.MobileNurseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".mvp.main.MultiPatientActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.setting.SystemSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.login.LoginActivity"
+            android:label="@string/btn_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mvp.launch.LoadingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mvp.main.SinglePatientActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.orders.OrdersInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.vital_signs.VitalSignsHistoryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.vital_signs.VitalSignsEditActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.operation.OperationScheduledInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.vital_signs.VitalSignsChartActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.nursing_round.NurseRoundHistoryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.assess.admission_assessment.AdmAssessActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.exam.report.ExamReportInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.exam.report.ExamReportActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.lab.report.LabReportActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.lab.report.LabReportInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.tool.PDFViewActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.tool.FullScreenWebViewActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.assess.health_edu.HealthEduActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.assess.health_edu.content.HealthEduContentActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.tool.order.OrdersViewerActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.assess.health_edu.history.HealthEduHistoryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mvp.tool.StopwatchActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--网络状态监听-->
+        <meta-data
+            android:name="com.herenit.mobilenurse.app.GlobalConfiguration"
+            android:value="ConfigModule" />
+        <!--适配7.0系统对私有文件的访问-->
+        <provider
+            android:name=".custom.provider.CustomFileProvider"
+            android:authorities="com.herenit.mobilenurse.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!--
+     只要依赖 AutoSize 就必须填写设计图尺寸, 否则报错, 不想使用 AutoSize 就不要依赖 AutoSize
+     只要填写完设计图的尺寸, AutoSize 就会自动启动, 以下 dp 尺寸是根据公式 px / (dpi / 160) 求出, 运算时使用测试机的 dpi 即可
+     AutoSize 的详细介绍请看这里 https://juejin.im/post/5bce688e6fb9a05cf715d1c2
+       -->
+        <!-- <meta-data
+             android:name="design_width_in_dp"
+             android:value="1821" />
+         <meta-data
+             android:name="design_height_in_dp"
+             android:value="976" /> -->
+
+        <!-- Arms 配置 -->
+        <receiver android:name=".custom.broadcast.NetworkBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"></action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+</manifest>

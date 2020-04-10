@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+
+        <CheckBox
+            android:id="@+id/cb_item_assess_dialog_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxEms="15"
+            android:text="意识模糊加上离开家阿斯顿发斯蒂芬"
+            android:textColor="@color/gray" />
+
+        <ImageView
+            android:id="@+id/img_assess_dialog_addHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_arrow_right_show" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_assess_dialog_addHandleResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="屁股斯大林会计分录卡京东方离开静安寺的的房间里卡"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_content_level_3" />
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40"
+    android:layout_margin="@dimen/dp_10"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_item_Assess_dialog_doubleInput_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/dp_5"
+        android:text="面积"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_content_level_3" />
+
+    <EditText
+        android:id="@+id/et_item_Assess_dialog_doubleInput_input1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/shape_bg_edittext_black" />
+
+    <TextView
+        android:id="@+id/tv_item_Assess_dialog_doubleInput_unit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="cm"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_content_level_3" />
+
+    <TextView
+        android:id="@+id/tv_item_Assess_dialog_doubleInput_connector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/dp_5"
+        android:text="x"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_content_level_3" />
+
+    <EditText
+        android:id="@+id/et_item_Assess_dialog_doubleInput_input2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/shape_bg_edittext_black" />
+
+    <TextView
+        android:id="@+id/tv_item_Assess_dialog_doubleInput_unit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/dp_5"
+        android:text="cm"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_content_level_3" />
+</LinearLayout>

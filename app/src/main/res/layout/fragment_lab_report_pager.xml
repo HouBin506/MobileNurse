@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_labReportPager_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_labReportPager_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_10"></android.support.v7.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_labReportPager_labType"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bottomBar_height"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_labReportPager_common"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/common_common"
+            android:textColor="@drawable/selector_text_color_blue_gray"
+            android:textSize="@dimen/text_content_level_3"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_labReportPager_microorganism"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/common_microorganism"
+            android:textColor="@drawable/selector_text_color_blue_gray"
+            android:textSize="@dimen/text_content_level_3"></RadioButton>
+    </RadioGroup>
+</LinearLayout>

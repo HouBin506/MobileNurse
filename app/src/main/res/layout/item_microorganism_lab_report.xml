@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_item_microorganismLabReport_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size_dp_0_5"
+        android:background="@color/gray_divider"></View>
+
+    <TextView
+        android:id="@+id/tv_item_microorganismLabReport_itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:text="咽拭子细菌+真菌培养药敏　　　　咽拭子"
+        android:textColor="@color/bg_royalBlue"
+        android:textSize="@dimen/text_content_level_2"></TextView>
+
+    <LinearLayout
+        android:id="@+id/ll_item_microorganismLabReport_itemTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/requestDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_requestDateTime"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_content_level_6" />
+
+            <TextView
+                android:id="@+id/tv_item_microorganismLabReport_requestDateTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="2019-08-28 11:20"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_content_level_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/labDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_labDateTime"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_content_level_6" />
+
+            <TextView
+                android:id="@+id/tv_item_microorganismLabReport_labDateTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="2019-08-28 11:20"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_content_level_6" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_microorganismLabReport_bioName"
+        style="@style/text_lightBlack_level3"
+        android:layout_marginTop="@dimen/dp_2"
+        android:text="正常菌群,未培养出真菌,未培养出致病嗜血杆菌"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/resultType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_result"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_content_level_5" />
+
+            <TextView
+                android:id="@+id/tv_item_microorganismLabReport_resultType"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="区别不出阴阳性"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_content_level_5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/spectrum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/field_spectrum"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_content_level_5" />
+
+            <TextView
+                android:id="@+id/tv_item_microorganismLabReport_spectrum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="耐甲氧西林凝固酶阴性葡萄球菌"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_content_level_5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title"></include>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_vitalSignsHistory_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/lv_vitalSignsHistory_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"></com.baoyz.swipemenulistview.SwipeMenuListView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_vitalSignsHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_lightGrayR"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_vitalSignsHistory_signType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_button_img_vital_signs_item"
+            android:gravity="center_horizontal"
+            android:text="@string/common_vital_signs_item"
+            android:textColor="@drawable/selector_text_color_blue_gray" />
+
+        <RadioButton
+            android:id="@+id/rb_vitalSignsHistory_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_button_img_calendar"
+            android:gravity="center_horizontal"
+            android:text="@string/common_all"
+            android:textColor="@drawable/selector_text_color_blue_gray" />
+    </RadioGroup>
+
+</LinearLayout>

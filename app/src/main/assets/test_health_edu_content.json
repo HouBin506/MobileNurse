@@ -1,0 +1,226 @@
+[
+  {
+    "id": "教育对象",
+    "viewName": "TextView",
+    "dataType": "字符",
+    "text": "教育对象：",
+    "dataValue": "",
+    "textSize": "Normal",
+    "modelType": "Item",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "教育对象_家属",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "家属",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      },
+      {
+        "id": "教育对象_病人",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "病人",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      },
+      {
+        "id": "教育对象_病人、家属",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "病人、家属",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "id": "教育时机",
+    "viewName": "TextView",
+    "dataType": "字符",
+    "text": "教育时机：",
+    "dataValue": "",
+    "textSize": "Normal",
+    "modelType": "Item",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "教育时机_首次教育",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "首次教育",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      },
+      {
+        "id": "教育时机_再次教育",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "再次教育",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      },
+      {
+        "id": "教育时机_否认需要",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "否认需要",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      },
+      {
+        "id": "教育时机_感兴趣",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "感兴趣",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "id": "教育方法",
+    "viewName": "TextView",
+    "dataType": "字符",
+    "text": "教育方法：",
+    "dataValue": "",
+    "textSize": "Normal",
+    "modelType": "Item",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "教育方法_书面",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "书面",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      },
+      {
+        "id": "教育时机_口述/讨论",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "口述/讨论",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      },
+      {
+        "id": "教育时机_示范",
+        "viewName": "CheckBox",
+        "dataType": "布尔",
+        "text": "示范",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "id": "教育时间",
+    "viewName": "TextView",
+    "dataType": "日期",
+    "text": "教育时间：",
+    "dataValue": "",
+    "textSize": "Normal",
+    "modelType": "Item",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "教育时间_1",
+        "viewName": "AssessCalendar",
+        "dataType": "日期",
+        "text": "",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": ""
+      }
+    ]
+  },
+  {
+    "id": "评价",
+    "viewName": "TextView",
+    "dataType": "字符",
+    "text": "评价：",
+    "dataValue": "",
+    "textSize": "Normal",
+    "modelType": "Item",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "评价_1",
+        "viewName": "AssessRadioGroup",
+        "dataType": "字符",
+        "text": "评价",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": "",
+        "valueDataList": "掌握|基本掌握|部分掌握|未掌握",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "id": "评估时间",
+    "viewName": "TextView",
+    "dataType": "日期",
+    "text": "评估时间：",
+    "dataValue": "",
+    "textSize": "Normal",
+    "modelType": "Item",
+    "unit": "",
+    "subModel": [
+      {
+        "id": "评估时间_1",
+        "viewName": "AssessCalendar",
+        "dataType": "日期",
+        "text": "",
+        "dataValue": "",
+        "textSize": "Normal",
+        "modelType": "Value",
+        "unit": ""
+      }
+    ]
+  },
+  {
+    "id": "评价人",
+    "viewName": "TextView",
+    "dataType": "字符",
+    "text": "评价人：",
+    "showDataValue": "侯斌",
+    "textSize": "Normal",
+    "modelType": "Item",
+    "unit": ""
+  }
+]

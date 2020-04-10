@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        style="@style/text_blue_level1"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/view_horizontal_margin_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="我是标题" />
+
+    <View
+        android:id="@+id/view_dialog_titleLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size_dp_0_5"
+        android:background="@color/bg_royalBlue"></View>
+
+</LinearLayout>

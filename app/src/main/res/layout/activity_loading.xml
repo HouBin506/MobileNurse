@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_loading"
+    tools:context=".mvp.launch.LoadingActivity">
+
+    <com.herenit.mobilenurse.custom.widget.progressbar.LoadingProgressBar
+        android:id="@+id/pb_loading_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_170"></com.herenit.mobilenurse.custom.widget.progressbar.LoadingProgressBar>
+
+    <com.herenit.mobilenurse.custom.widget.progressbar.DownloadProgressBar
+        android:id="@+id/pb_loading_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_170"></com.herenit.mobilenurse.custom.widget.progressbar.DownloadProgressBar>
+
+    <TextView
+        android:id="@+id/tv_app_copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dp_5"
+        android:lines="1"
+        android:textSize="@dimen/text_content_level_6"
+        android:text="@string/app_copyright" />
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 控件选中颜色 -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Activity</item>
+        <!--4.4-5.0使用windowTranslucentStatus可设置状态栏透明-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

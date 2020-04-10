@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title"></include>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_nurseRoundHistory_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_nurseRoundHistory_historyList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"></android.support.v7.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_nurseRoundHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_lightGrayR"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_nurseRoundHistory_roundItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_button_img_common_item"
+            android:gravity="center_horizontal"
+            android:text="@string/common_round_item"
+            android:textColor="@drawable/selector_text_color_blue_gray" />
+
+        <RadioButton
+            android:id="@+id/rb_nurseRoundHistory_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_button_img_calendar"
+            android:gravity="center_horizontal"
+            android:text="@string/common_all"
+            android:textColor="@drawable/selector_text_color_blue_gray" />
+    </RadioGroup>
+
+</LinearLayout>

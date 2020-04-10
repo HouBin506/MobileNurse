@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40"
+    android:background="@color/bg_lightGrayR"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size_dp_0_8"
+        android:background="@color/gray_divider"></View>
+    <!--常用的，Name-Value组合的操作框界面，右侧带有箭头-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_item_commonNameValue_name"
+            style="@style/text_lightBlack_level2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/view_horizontal_margin_screen"
+            android:text="标本说明" />
+
+        <LinearLayout
+            android:id="@+id/ll_item_commonNameValue_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/view_horizontal_margin_brother"
+            android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+            android:layout_toRightOf="@id/tv_item_commonNameValue_name"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_item_commonNameValue_value"
+                style="@style/text_lightBlack_level3"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="我是value我是value我是" />
+
+            <ImageView
+                android:id="@+id/img_item_commonNameValue_arrow"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_25"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_arrow_right_gray" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

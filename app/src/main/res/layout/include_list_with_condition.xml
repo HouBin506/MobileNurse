@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.sickbed.SickbedListFragment">
+    <!--带有条件选项的的列表页面 其中上部是条件列表，下部是数据列表-->
+    <com.herenit.mobilenurse.custom.widget.layout.MNScrollView
+        android:id="@+id/sv_listWithCondition_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.herenit.mobilenurse.custom.widget.layout.SimulateListView
+                android:id="@+id/lv_listWithCondition_condition"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></com.herenit.mobilenurse.custom.widget.layout.SimulateListView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_listWithCondition_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.herenit.mobilenurse.custom.widget.layout.MNScrollView>
+
+    <TextView
+        android:id="@+id/tv_sickbedList_selectedCondition"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@android:color/transparent"
+        android:textSize="@dimen/text_content_level_4" />
+</FrameLayout>

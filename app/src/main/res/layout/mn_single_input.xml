@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_mnSingleInput_prefix"
+        style="@style/text_lightBlack_level3"
+        android:layout_gravity="center_vertical"
+        android:text="体温（T）" />
+
+    <EditText
+        android:id="@+id/et_mnSingleInput_input"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_35"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/shape_bg_edittext_black"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_content_level_3" />
+
+    <TextView
+        android:id="@+id/tv_mnSingleInput_suffix"
+        style="@style/text_lightBlack_level3"
+        android:layout_gravity="center_vertical"
+        android:text="mmHg" />
+</LinearLayout>

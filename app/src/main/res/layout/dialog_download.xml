@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_downloadDialog_rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/view_vertical_margin_screen"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.herenit.mobilenurse.custom.widget.progressbar.DownloadProgressBar
+        android:id="@+id/pb_downloadDialog_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

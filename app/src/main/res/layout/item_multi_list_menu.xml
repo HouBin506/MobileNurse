@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/dp_40"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_5"
+    android:paddingRight="@dimen/dp_5">
+
+    <CheckBox
+        android:id="@+id/cb_item_multiListMenu_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/selector_checkbox_login"></CheckBox>
+
+    <TextView
+        android:id="@+id/tv_item_multiListMenu_itemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="阿斯顿发送到；‘； 阿pml;jiiejjjii哦口口OK吗怕，，开门没看看了爬山的分块【按时开发斯顿发大水发"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/text_content_level_2"></TextView>
+
+    <ImageView
+        android:id="@+id/img_item_multiListMenu_subItem"
+        android:layout_width="@dimen/dp_10"
+        android:layout_height="@dimen/dp_20"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_arrow_right_gray"></ImageView>
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_item_operationScheduled_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size_dp_0_5"
+        android:background="@color/gray_divider"></View>
+
+    <RelativeLayout
+        android:id="@+id/rl_item_operationScheduled_nameAndEmergency"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv_item_operationScheduled_bedAndName"
+            style="@style/text_blue_level1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="300床 公孙玲珑" />
+
+        <TextView
+            android:id="@+id/tv_item_operationScheduled_emergency"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_content_level_3" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_operationScheduled_operationTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_operationTime"
+            style="@style/text_gray_level4"
+            android:text="@string/field_operationTime" />
+
+        <TextView
+            android:id="@+id/tv_item_operationScheduled_operationTime"
+            style="@style/text_lightBlack_level4"
+            android:text="2019-05-22 17:27" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_operationScheduled_statusAndDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_item_operationScheduled_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_operationStatus"
+                style="@style/text_gray_level4"
+                android:text="@string/field_operationStatus" />
+
+            <TextView
+                android:id="@+id/tv_item_operationScheduled_operationStatus"
+                style="@style/text_lightBlack_level4"
+                android:text="手术执行" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_item_operationScheduled_doctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_operationDoctor"
+                style="@style/text_gray_level4"
+                android:text="@string/field_operationDoctor" />
+
+            <TextView
+                android:id="@+id/tv_item_operationScheduled_operationDoctor"
+                style="@style/text_lightBlack_level4"
+                android:text="医师侯斌" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_operationScheduled_diagnose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_diagnose"
+            style="@style/text_gray_level4"
+            android:text="@string/field_diagnose" />
+
+        <TextView
+            android:id="@+id/tv_item_operationScheduled_diagnose"
+            style="@style/text_lightBlack_level4"
+            android:ellipsize="end"
+            android:maxLines="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_operationScheduled_operationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_operationName"
+            style="@style/text_gray_level4"
+            android:text="@string/field_operationName" />
+
+        <TextView
+            android:id="@+id/tv_item_operationScheduled_operationName"
+            style="@style/text_lightBlack_level4"
+            android:ellipsize="end"
+            android:maxLines="3" />
+    </LinearLayout>
+</LinearLayout>

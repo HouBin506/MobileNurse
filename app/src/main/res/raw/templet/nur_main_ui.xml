@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Layout>
+    <TitleEdit id="te1" InputType="text" Text="营养评分" />
+    <UniButton id="btn1" Text="填写" />
+</Layout>

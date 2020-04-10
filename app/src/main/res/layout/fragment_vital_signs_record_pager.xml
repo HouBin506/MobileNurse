@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.sickbed.SickbedListFragment">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_vitalSigns_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_vitalSigns_recordTimeAndHistory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:background="@color/bg_lightGrayB">
+
+                <TextView
+                    android:id="@+id/tv_vitalSigns_recordDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/view_horizontal_margin_screen"
+                    android:drawableRight="@drawable/ic_calendar_small_blue"
+                    android:gravity="center_vertical"
+                    android:text="2019-04-16 09:55"
+                    android:textColor="@color/bg_royalBlue"
+                    android:textSize="@dimen/text_content_level_2" />
+
+                <TextView
+                    android:id="@+id/tv_vitalSigns_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/view_horizontal_margin_screen"
+                    android:drawableRight="@mipmap/ic_history_small"
+                    android:gravity="center_vertical"
+                    android:text="@string/btn_historyRecord"
+                    android:textColor="@color/bg_royalBlue"
+                    android:textSize="@dimen/text_content_level_2" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_vitalSigns_vitalSignsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</FrameLayout>

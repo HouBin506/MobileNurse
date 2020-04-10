@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><!--标题栏布局 ，从左到右：ImageView、TextView、TextView-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_includeHealthEdu_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:background="@color/bg_lightGrayB">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="@string/common_healthEduContent"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_content_level_2"></TextView>
+
+        <ImageView
+            android:id="@+id/img_healthEduContent_resetSelectedItem"
+            android:layout_width="wrap_content"
+            android:background="@drawable/shape_bg_text_transparent_solid_blue_stroke"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_reset_small_black"></ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_healthEduContent_selectedItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        android:text="健康教育：入院宣教、饮食宣教、护理措施宣教：心内科、普外科、儿科。"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_content_level_4"></TextView>
+
+    <EditText
+        android:id="@+id/et_healthEduContent_inputContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        android:background="@drawable/shape_bg_edittext_black"
+        android:minHeight="@dimen/dp_100"
+        android:padding="@dimen/dp_2"
+        android:text="坠床跌倒：①穿合适的裤子，并穿防滑鞋，②湿性拖地后避免不必要的走动，③如您在行走时出现头晕，双眼发黑，下肢无力，不太不稳和不能移动时，立即原地坐（蹲）下或靠墙，呼叫他人帮助，④改变体位应遵循“三部曲”：即平躺30秒，坐起30秒，站立30秒，再行走，避免体位突然改变，尤其是夜间。"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/text_content_level_2"></EditText>
+
+    <LinearLayout
+        android:id="@+id/ll_healthEduContent_importOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_30"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/dp_5"
+        android:background="@color/bg_lightGrayB"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_import_black_small"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:text="@string/common_order"
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_content_level_2"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/bg_lightGrayB"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_5"
+        android:text="@string/common_healthEduResult"
+        android:textColor="@color/text_blue"
+        android:textSize="@dimen/text_content_level_2"></TextView>
+
+</LinearLayout>

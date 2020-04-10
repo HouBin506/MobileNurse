@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--体征录入Item-->
+    <View
+        android:id="@+id/view_item_vitalSignsRecord_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size_dp_0_8"
+        android:layout_marginLeft="@dimen/view_horizontal_margin_parent"
+        android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+        android:layout_marginBottom="@dimen/view_vertical_margin_brother"
+        android:background="@color/gray_divider"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_item_vitalSignsRecord_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/view_horizontal_margin_parent"
+        android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_item_vitalSignsRecord_groupName"
+            style="@style/text_lightBlack_level2"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="体温" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_vitalSignsRecord_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_item_vitalSignsRecord_itemValue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/view_horizontal_margin_screen"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_marginRight="@dimen/view_horizontal_margin_screen"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_item_vitalSignsRecord_itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/cb_item_vitalSignsRecord_itemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_checkbox_circle"
+                    android:text="物理降温"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_content_level_3"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_item_vitalSignsRecord_itemName"
+                    style="@style/text_lightBlack_level3"
+                    android:layout_centerVertical="true"
+                    android:text="物理降温"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_vitalSignsRecord_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_2"
+                android:layout_weight="2"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_vitalSignsRecord_specialValue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_2"
+                android:layout_weight="1.5"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/img_item_vitalSignsRecord_chart"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:scaleType="center"
+                android:src="@mipmap/ic_chart_small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_item_vitalSignsRecord_itemDate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/view_horizontal_margin_screen"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_marginRight="@dimen/view_horizontal_margin_screen"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_item_vitalSignsRecord_timePointField"
+                style="@style/text_lightBlack_level3"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/field_timePoint" />
+
+            <TextView
+                android:id="@+id/tv_item_vitalSignsRecord_timePoint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                android:text="2019-04-12 14:57"
+                android:textColor="@color/bg_royalBlue"
+                android:textSize="@dimen/text_content_level_3" />
+
+            <LinearLayout
+                android:id="@+id/ll_item_vitalSignsRecord_fixedTimePoint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_item_vitalSignsRecord_fixedTimePoint"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_bg_drop_down_textview"
+                    android:gravity="center"
+                    android:text="08:00"
+                    android:textColor="@color/bg_royalBlue"
+                    android:textSize="@dimen/text_content_level_3" />
+
+                <ImageView
+                    android:id="@+id/img_item_vitalSignsRecord_fixedTimeClear"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_delete_cross" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_item_vitalSignsRecord_memo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/view_horizontal_margin_screen"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_marginRight="@dimen/view_horizontal_margin_screen"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_fieldMemo"
+                style="@style/text_lightBlack_level3"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/field_memo" />
+
+            <EditText
+                android:id="@+id/et_item_vitalSignsRecord_memo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_2"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_edittext_black"
+                android:hint="@string/message_inputMemo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_item_vitalSignsRecord_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_horizontal_margin_screen"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_marginRight="@dimen/view_horizontal_margin_screen"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_item_vitalSignsRecord_frequency"
+                style="@style/text_gray_level4"
+                android:layout_gravity="center_vertical"
+                android:text="3次/日" />
+
+            <TextView
+                android:id="@+id/tv_item_vitalSignsRecord_desc"
+                style="@style/text_gray_level4"
+                android:layout_marginLeft="@dimen/view_horizontal_margin_brother"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="物理降温正常值范围36~38℃，允许输入录入范围35~42℃" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

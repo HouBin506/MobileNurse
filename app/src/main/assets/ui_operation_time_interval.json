@@ -1,0 +1,34 @@
+[
+  {
+    "name": "当日",
+    "code": "Today"
+  },
+  {
+    "name": "明天",
+    "code": "Tomorrow"
+  },
+  {
+    "name": "后天",
+    "code": "TwoDaysLater"
+  },
+  {
+    "name": "三天内",
+    "code": "InThreeDays"
+  },
+  {
+    "name": "一周内",
+    "code": "InAWeek"
+  },
+  {
+    "name": "一个月内",
+    "code": "InAMonth"
+  },
+  {
+    "name": "过去3天内",
+    "code": "InPastThreeDays"
+  },
+  {
+    "name": "全部",
+    "code": "All"
+  }
+]

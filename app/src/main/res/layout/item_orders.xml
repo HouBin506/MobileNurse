@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:nestedScrollingEnabled="false"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/view_item_orders_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size_dp_0_8"
+        android:background="@color/gray_divider"></View>
+
+
+    <LinearLayout
+        android:id="@+id/ll_item_orders_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/cb_item_orders_select"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center_vertical"
+            android:button="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/selector_checkbox_circle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_item_orders_planDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:lines="1"
+                android:text="08:30"
+                android:textColor="@color/bg_royalBlue"
+                android:textSize="@dimen/text_content_level_1" />
+
+            <TextView
+                android:id="@+id/tv_item_orders_executeDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_horizontal_margin_brother"
+                android:layout_toRightOf="@id/tv_item_orders_planDateTime"
+                android:lines="1"
+                android:text="2019-03-08 11:25:25"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_content_level_1" />
+
+            <TextView
+                android:id="@+id/tv_item_orders_psResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@id/tv_item_orders_executeDateTime"
+                android:text="(+)"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_content_level_1"
+                android:visibility="gone"></TextView>
+
+            <ImageView
+                android:id="@+id/img_item_orders_executeResult"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_pencil_small" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_orders_startDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_25"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_startDateTime"
+            style="@style/text_gray_level3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/field_startDateTime"></TextView>
+
+        <TextView
+            android:id="@+id/tv_item_orders_startDateTime"
+            style="@style/text_lightBlack_level3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_orders_orderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:minHeight="@dimen/dp_25"
+        android:text="通知：2018-04-17 08:00 在气管内插管全麻下进行“胃大部切除术[毕罗特Ⅰ式]”手术"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/text_content_level_2" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_orders_desc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+        android:minHeight="@dimen/dp_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_item_orders_desc1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="剂量：4100.0axaiu"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_content_level_5" />
+
+        <TextView
+            android:id="@+id/tv_item_orders_desc2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="方式：静脉注射（静滴）"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_content_level_5" />
+
+        <TextView
+            android:id="@+id/tv_item_orders_desc3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="频率：3次/日"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_content_level_5" />
+
+        <TextView
+            android:id="@+id/tv_item_orders_desc4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="标本：血清"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_content_level_5"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_orders_desc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+        android:minHeight="@dimen/dp_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_item_orders_desc5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="用法：餐后"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_content_level_5" />
+
+        <TextView
+            android:id="@+id/tv_item_orders_desc6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="方式：静脉注射（静滴）"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_content_level_5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_item_orders_desc7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="频率：3次/日"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_content_level_5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_item_orders_desc8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/view_horizontal_margin_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="标本：血清"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_content_level_5"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_item_nurseRound_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_item_nurseRound_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size_dp_0_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/gray_divider"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1">
+
+
+            <CheckBox
+                android:id="@+id/cb_item_nurseRound_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_checkbox_circle"
+                android:text="在位情况"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/text_title_level_2" />
+
+            <TextView
+                android:id="@+id/tv_item_nurseRound_clear"
+                style="@style/text_blue_level1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_5"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:text="@string/btn_clear" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_nurseRound_value"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingBottom="@dimen/dp_2">
+
+        <TextView
+            android:id="@+id/tv_item_nurseRound_valueName"
+            style="@style/text_lightBlack_level3"
+            android:layout_gravity="center_vertical"
+            android:text="在位情况" />
+
+        <LinearLayout
+            android:id="@+id/ll_item_nurseRound_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
